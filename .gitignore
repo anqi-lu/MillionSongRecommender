@@ -99,3 +99,11 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# customze
+datasets/
+EvalData/
+data/
+song_data.csv
+train_triplets.txt
+submission.txt
