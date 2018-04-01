@@ -4,10 +4,9 @@ Python3, PySpark
 - Install pipenv to create virtual environment and manage packages
 `pip install pipenv`
 
-`pipenv install`
-- default should be python3 
+- `pipenv install` default should be python3 
 
-`pipenv shell` - activate the virtual environment
+- `pipenv shell` - activate the virtual environment
 
 open notebook using:
 `ipython3 notebook` 
