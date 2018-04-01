@@ -20,6 +20,6 @@ In hdf5.ipynb, the file path is on my local. Please download the msd subset thro
 
 
 ### Tasks to be completed
-- [ ] 用pandas dataframe把h5都读进来 然后用另外一个spark_rec的 data换成这个新读的h5 数据 跑一下看看
+- [ ] In hdf5.ipynb - 用pandas dataframe把h5都读进来 然后用另外一个spark_rec的 data换成这个新读的h5 数据 跑一下看看
 - [ ] 看看能不能把这些H5都传到hadoop 然后用spark接着hadoop run
-- [ ] 用LSH找audio segmentation的similarity  做content based
+- [ ] 再开一个notebook，用LSH找audio segmentation的similarity  做content based
