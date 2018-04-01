@@ -1,4 +1,5 @@
 ### Prerequists 
+Python3, PySpark 
 
 - Install pipenv to create virtual environment and manage packages
 `pip install pipenv`
@@ -7,6 +8,9 @@
 - default should be python3 
 
 `pipenv shell` - activate the virtual environment
+
+open notebook using:
+`ipython3 notebook` 
 
 - You will need pyspark  
 - Install through this [tutorial](https://blog.sicara.com/get-started-pyspark-jupyter-guide-tutorial-ae2fe84f594f) 
