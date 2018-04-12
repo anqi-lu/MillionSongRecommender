@@ -6,7 +6,7 @@ Python3, PySpark
 
 `pipenv install`
 
-`pipenv shell` - activate the virtual environment
+- `pipenv shell` - activate the virtual environment
 
 `pipenv --two` - change it into python 2 
 
