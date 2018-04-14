@@ -2,6 +2,12 @@ from numpy import array
 from math import sqrt
 from pyspark.mllib.clustering import KMeans, KMeansModel
 
+import findspark
+findspark.init()
+
+sc = SparkContext(appName="Recommender")
+
+
 # Load and parse the data
 data = sc.textFile("data/dbsongs_all_b.csv")
 parsedData = data.map(lambda line: array([float(x) for x in line.split(' ')]))

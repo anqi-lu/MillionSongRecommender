@@ -8,18 +8,15 @@
 
 import pandas as pd
 import numpy as np
-
-from pyspark import SparkContext
 from math import sqrt
 
+from pyspark import SparkContext
 from pyspark.mllib.clustering import KMeans, KMeansModel
 
 import findspark
 findspark.init()
 
 sc = SparkContext(appName="Recommender")
-
-
 
 # songs = pd.read_csv("data/dbsongs_all_b.csv")
 # songs = songs.drop_duplicates()
@@ -46,13 +43,11 @@ sc = SparkContext(appName="Recommender")
 
 # Load and parse the data
 data = sc.textFile("data/dbsongs_audio_b.csv").take(1000) # dbsongs_audio_b.csv
-# parsedData = data.map(lambda line: array([float(x) for x in line.split(' ')]))
-parsedData = data.filter(lambda line: type(line) == list).map(lambda line: np.array([float(x) for x in line.split(',')]))
-
-
+parsedData = data.map(lambda line: array([float(x) for x in line.split(' ')]))
+# parsedData = data.filter(lambda line: type(line) == list).map(lambda line: np.array([float(x) for x in line.split(',')]))
 
 # Build the model (cluster the data)
-clusters = KMeans.train(parsedData, 15, maxIterations=10, initializationMode="random")
+clusters = KMeans.train(data, 15, maxIterations=10, initializationMode="random")
 
 # Evaluate clustering by computing Within Set Sum of Squared Errors
 def error(point):
