@@ -21,8 +21,8 @@ open notebook using:
 In hdf5.ipynb, the file path is on my local. Please download the msd subset through MSD [Getting the Dataset](https://labrosa.ee.columbia.edu/millionsong/pages/getting-dataset) (click directly download subset) and store it in your local environment.
 
 
-### Tasks to be completed
+### Tasks
 - [x] Spark collaborative filtering with train triplets 
-- [ ] Spark k-means with audio data csv
-- [ ] Spark LSH with audio data csv
-- [ ] Spark collaborative filtering with neural networks 
+- [x] Spark k-means with audio data csv
+- [x] Spark LSH with audio data csv
+
